@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pago de Factura</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('facctura.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      animation: fadeInBody 2s ease-in-out;
+    }
+
+    @keyframes fadeInBody {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    .contenedor-boton {
+      margin-top: 450px; /* Más abajo aún */
+      text-align: center;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .boton-pago {
+      padding: 18px 40px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      font-size: 1.4em;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+      animation: pulseGlow 2s infinite;
+    }
+
+    .boton-pago:hover {
+      background-color: #218838;
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    }
+
+    @keyframes pulseGlow {
+      0% {
+        box-shadow: 0 0 10px rgba(40, 167, 69, 0.4);
+      }
+      50% {
+        box-shadow: 0 0 20px rgba(40, 167, 69, 0.8);
+      }
+      100% {
+        box-shadow: 0 0 10px rgba(40, 167, 69, 0.4);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="contenedor-boton">
+    <a href="" class="boton-pago">Pagar tu factura aquí</a>
+  </div>
+
+</body>
+</html>
